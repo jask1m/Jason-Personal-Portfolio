@@ -46,7 +46,7 @@ const Achievements = () => {
       <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
-            Achievements
+            Relevant Coursework
           </h1>
         </div>
       </div>
@@ -91,7 +91,7 @@ const Achievements = () => {
 };
 
 const AchievementCard = (props) => {
-  return (
+  return ( 
     <div className="flex-shrink-0 flex flex-col md:w-[400px] w-[320px] justify-around px-6 py-4 rounded-[20px] md:mr-10 mr-6 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent">
       <img
         src={props.icon}
@@ -108,12 +108,12 @@ const AchievementCard = (props) => {
         </p>
         {props.content1 && (
           <p className="font-poppins font-normal text-dimWhite text-sm mb-1">
-            🚀 {props.content1}
+            📓 {props.content1}
           </p>
         )}
         {props.content2 && (
           <p className="font-poppins font-normal text-dimWhite text-sm mb-1">
-            ⚡ {props.content2}
+            😃 {props.content2}
           </p>
         )}
         {props.content3 && (

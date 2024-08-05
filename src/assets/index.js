@@ -47,6 +47,11 @@ import dennisivy from "./dennisivy.png";
 import manipal from "./manipal.png";
 import icon from "./icon.jpg";
 import ethforall from "./ethforall.png";
+import sce from "./sce.png";
+import stanford from "./stanford.png";
+import sjsu from "./sjsu.jpeg";
+import mission from "./mission.png";
+import swc from "./swc.png";
 
 export {
   quotes,
@@ -97,5 +102,10 @@ export {
   dennisivy,
   manipal,
   icon,
-  ethforall
+  ethforall,
+  sce,
+  stanford,
+  sjsu,
+  mission,
+  swc
 };
