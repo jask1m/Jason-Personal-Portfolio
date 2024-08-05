@@ -52,6 +52,9 @@ import stanford from "./stanford.png";
 import sjsu from "./sjsu.jpeg";
 import mission from "./mission.png";
 import swc from "./swc.png";
+import boba from "./boba.png";
+import jason from "./jason.jpeg";
+import cards from "./cards.jpeg";
 
 export {
   quotes,
@@ -107,5 +110,8 @@ export {
   stanford,
   sjsu,
   mission,
-  swc
+  swc,
+  boba,
+  jason,
+  cards
 };

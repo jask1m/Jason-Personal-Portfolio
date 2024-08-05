@@ -31,7 +31,9 @@ import {
   stanford,
   sjsu,
   mission,
-  swc
+  swc,
+  boba,
+  cards
 } from "../assets";
 
 import {
@@ -51,6 +53,7 @@ import {
   SiBootstrap,
   SiReact,
   SiTailwindcss,
+  SiSocketdotio,
   SiGraphql,
   SiPython,
   SiCplusplus,
@@ -99,8 +102,8 @@ import {
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 
-export const resumeLink = "https://drive.google.com/file/d/1dp9zYqgvYBNga49JDnm5lizsT1rWQRCa/view?usp=sharing";
-export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
+export const resumeLink = "https://drive.google.com/file/d/190pYkceCGJsoTn96sn-s916nKHz3HeQh/view?usp=sharing";
+export const repoLink = "https://github.com/jask1m/Jason-Personal-Portfolio";
 
 export const callToAction = "https://www.linkedin.com/in/jasonkimbusiness";
 
@@ -122,14 +125,6 @@ export const navLinks = [
     title: "Projects",
   },
   {
-    id: "openSource",
-    title: "Open Source",
-  },
-  {
-    id: "extraCurricular",
-    title: "Extra Curricular",
-  },
-  {
     id: "contactMe",
     title: "Contact Me",
   },
@@ -140,9 +135,10 @@ export const educationList = [
     id: "education-1",
     icon: sjsu,
     title: "San Jose State University",
-    degree: "Bachelor of Science",
-    duration: "est. graduation: Dec. 2027",
-    content1: "Major: Computer Science",
+    degree: "B.S. Computer Science",
+    duration: "expected graduation: Dec. 2027",
+    content1: "Activities & societies: SJSU Software & Computer Engineering",
+    content2: "Cumulative gpa: 4.0",
   },
 ];
 
@@ -162,7 +158,7 @@ export const achievements = [
     event: "Intro to Data Structures & Algorithms",
     position: "CIS-044 (Mission College)",
     content1: "Learned something new: 4/5",
-    content2: "Enjoyed the class: 5/5",
+    content2: "Enjoyed the class: 4/5",
     content3: "Difficulty: 2/5",
   },
   {
@@ -170,7 +166,7 @@ export const achievements = [
     icon: sjsu,
     event: "Data Structures & Algorithms",
     position: "CS-146 (SJSU)",
-    content1: "Learned something new: 4/5",
+    content1: "Learned something new: 3/5",
     content2: "Enjoyed the class: 3/5",
     content3: "Difficulty: 5/5",
   },
@@ -327,6 +323,27 @@ export const experiences = [
     ],
   },
   {
+    organisation: "Boba Talks",
+    logo: boba,
+    link: "https://bobatalks.com/",
+    positions: [
+      {
+        title: "Technology Career Exploration Program",
+        duration: "Apr. 2024 - Jun. 2024",
+        content: [
+          {
+            text: "Selected to join a cohort of 20 students to learn tech industry standards across Software Engineering, UI/UX Design, and Product Management.",
+            link: ""
+          },
+          {
+            text: "Designed a project from ideation, to prototyping, then presented a product pitch throgh Figma design documents.",
+            link: ""
+          }
+        ],
+      },
+    ],
+  },
+  {
     organisation: "Stanford University",
     logo: stanford,
     link: "https://averlon.ai/",
@@ -370,12 +387,12 @@ export const openSourceContributions = [
 export const projects = [
   {
     id: "project-1",
-    title: "Comicify.ai",
-    github: "https://github.com/ayush4345/Comicify.ai",
-    link: "https://comicify-ai.vercel.app/",
-    image: comicify_ai,
+    title: "Ludere Gaming",
+    github: "https://github.com/jask1m",
+    link: "https://github.com/jask1m",
+    image: cards,
     content:
-      "Convert any academic/news/boring text into cool comic strips using GPT-3.5 and Stable Diffusion!",
+      "Multiplayer poker application built with SocketIO to simulate realtime communcation between clients and the server",
     stack: [
       {
         id: "icon-1",
@@ -389,29 +406,29 @@ export const projects = [
       },
       {
         id: "icon-3",
-        icon: SiOpenai,
-        name: "OpenAI"
+        icon: SiTypescript,
+        name: "TypeScript"
       },
       {
         id: "icon-4",
-        icon: SiGooglecloud,
-        name: "Google Cloud Platform"
+        icon: SiNodedotjs,
+        name: "NodeJS"
       },
       {
         id: "icon-5",
-        icon: SiFlask,
-        name: "Flask"
+        icon: SiSocketdotio,
+        name: "SocketIO"
       },
     ],
   },
   {
     id: "project-2",
-    title: "GreenTrust",
-    github: "https://github.com/mittal-parth/GreenTrust",
-    link: "https://green-trust-fantom.netlify.app/",
+    title: "EZ Database",
+    github: "https://github.com/jask1m",
+    link: "https://github.com/jask1m",
     image: greentrust,
     content:
-      "Winning project at 3 hackathons, GreenTrust offers a novel solution for obtaining certification in organic farming by organizing credible and decentralized Participatory Guarantee Systems (PGSs).",
+      "Interface for companies & organizations to track internal personnel through role-based authentication permissions",
     stack: [
       {
         id: "icon-1",
@@ -425,23 +442,13 @@ export const projects = [
       },
       {
         id: "icon-3",
-        icon: SiNextdotjs,
-        name: "Next.js"
+        icon: SiDjango,
+        name: "Django"
       },
       {
         id: "icon-4",
-        icon: SiIpfs,
-        name: "IPFS"
-      },
-      {
-        id: "icon-5",
-        icon: SiSolidity,
-        name: "Solidity"
-      },
-      {
-        id: "icon-6",
-        icon: IoIosNotificationsOutline,
-        name: "Push Protocol"
+        icon: SiPostgresql,
+        name: "PostgreSQL"
       },
     ],
   },
@@ -532,114 +539,43 @@ export const stats = [
 ];
 
 export const extraCurricular = [
-  {
-    organisation: "Devfolio",
-    title: "UniDAO Lead",
-    duration: "December 2021 - Present",
-    content: [
-      {
-        text: "Selected among 5 students across the country to lead the initiative and grow the culture of Blockchain and Ethereum, powered by Devfolio.",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:7097977924686942209/",
-      },
-      {
-        text: "Led a cohort of 37 selected students over 6 weeks to learn and build in the Ethereum ecosystem.",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:7095310520282480641/",
-      },
-    ],
-    logo: devfolio,
-  },
-  {
-    organisation: "Google Developer Student Club, NITK",
-    title: "Co-Chair",
-    duration: "December 2021 - Present",
-    content: [
-      {
-        text: "Started HackClub to promote and spread the culture of Hackathons in the college. 20+ hackathons particiaptions, 15+ wins over the year.",
-        link: "",
-      },
-      {
-        text: "Co-designed and developed the official website of Incident, NITK with 15K+ visitors",
-        link: "https://incident.nitk.ac.in/",
-      },
-    ],
-    logo: gdsc,
-  },
-  {
-    organisation: "Genesis, NITK",
-    title: "Competitions Head",
-    duration: "Sep 2021 - Present",
-    content: [
-      {
-        text: "Qualified for the nationals of Indian Hip Hop Dance Championship",
-        link: "",
-      },
-      {
-        text: "Won 7 inter-college solo dance competitions",
-        link: "",
-      },
-    ],
-    logo: genesis,
-  },
-  {
-    organisation: "IRIS, NITK",
-    title: "Tutor",
-    duration: "Jan 2022 - Jan 2022",
-    content: [
-      {
-        text: "Mentored 150+ students in a month-long Web Development and Ruby on Rails Bootcamp",
-        link: "https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2021",
-      },
-    ],
-    logo: iris,
-  },
-  {
-    organisation: "E-Cell, NITK",
-    title: "Executive Member",
-    duration: "Sep 2021 - Apr 2022",
-    content: [
-      {
-        text: "Organised the season 3 of the E-Cell NITK Podcast",
-        link: "https://www.youtube.com/watch?v=uA-Yrk6bVDc",
-      },
-      {
-        text: "Member of the Sponsorship and E-Talks team for E-Summit'22",
-        link: "",
-      },
-    ],
-    logo: ecell,
-  },
+  // {
+  //   organisation: "Boba Talks",
+  //   title: "Technology Career Exploration Program",
+  //   duration: "May 2024 - Jul. 2024",
+  //   content: [
+  //     {
+  //       text: "Selected to join a cohort of 20 students to learn tech industry standards across Software Engineering, UI/UX Design, and Product Management.",
+  //       link: "https://bobatalks.com/",
+  //     },
+  //     {
+  //       text: "Designed a project from ideation, to prototyping, then presented a product pitch throgh Figma design documents.",
+  //     },
+  //   ],
+  //   logo: boba,
+  // },
 ];
 
 export const socialMedia = [
   {
     id: "social-media-1",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/mittal-parth",
+    link: "https://www.linkedin.com/in/jasonkimbusiness",
   },
   {
     id: "social-media-2",
     icon: AiFillGithub,
-    link: "https://www.github.com/mittal-parth",
+    link: "https://www.github.com/jask1m",
   },
   {
     id: "social-media-3",
     icon: AiFillMail,
-    link: "mailto:mittalparth22@gmail.com",
-  },
-  {
-    id: "social-media-4",
-    icon: AiOutlineTwitter,
-    link: "https://www.twitter.com/mittalparth_",
-  },
-  {
-    id: "social-media-5",
-    icon: AiFillInstagram,
-    link: "https://www.instagram.com/mittalparth_",
+    link: "mailto:jason.kim02@sjsu.edu",
   },
 ];
 
 export const aboutMe = {
-  name: "Parth Mittal",
-  tagLine: "MTS-1 @Oracle | ex-SDE Intern @Averlon | ex-Tech Lead @IRIS,NITK | ETHIndia'22 Winner | NITK'24",
-  intro: "Software Developer from India who is either busy improving his craft or pondering over the next big idea."
+  name: "Jason Kim",
+  tagLine: "Compter Science student at San Jose State University",
+  intro: "Aspiring Software Engineering interested in fullstack development roles."
 }
