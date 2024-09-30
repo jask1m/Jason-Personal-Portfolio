@@ -55,6 +55,8 @@ import swc from "./swc.png";
 import boba from "./boba.png";
 import jason from "./jason.jpeg";
 import cards from "./cards.jpeg";
+import linkin from "./linkin.png";
+import carpool from "./carpool.webp";
 
 export {
   quotes,
@@ -113,5 +115,7 @@ export {
   swc,
   boba,
   jason,
-  cards
+  cards,
+  linkin,
+  carpool,
 };

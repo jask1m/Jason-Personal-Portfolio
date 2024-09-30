@@ -33,7 +33,9 @@ import {
   mission,
   swc,
   boba,
-  cards
+  cards,
+  linkin,
+  carpool,
 } from "../assets";
 
 import {
@@ -84,7 +86,12 @@ import {
   SiGooglecloud,
   SiNextdotjs,
   SiDocker,
-  SiPandas
+  SiPandas,
+  SiExpress,
+  SiMongodb,
+  SiKotlin,
+  SiSpringboot,
+  SiAndroid
 } from "react-icons/si";
 
 import {
@@ -102,7 +109,7 @@ import {
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 
-export const resumeLink = "https://drive.google.com/file/d/190pYkceCGJsoTn96sn-s916nKHz3HeQh/view?usp=sharing";
+export const resumeLink = "https://drive.google.com/file/d/1mSqodZRkxCxpcyHxM72-r3Ow3p5CD7Cq/view?usp=sharing";
 export const repoLink = "https://github.com/jask1m/Jason-Personal-Portfolio";
 
 export const callToAction = "https://www.linkedin.com/in/jasonkimbusiness";
@@ -189,8 +196,8 @@ export const skills = [
       },
       {
         id: "pl-7",
-        icon: SiC,
-        name: "C",
+        icon: SiKotlin,
+        name: "Kotlin",
       },
       {
         id: "pl-8",
@@ -201,11 +208,6 @@ export const skills = [
         id: "pl-9",
         icon: DiCss3,
         name: "CSS",
-      },
-      {
-        id: "pl-10",
-        icon: SiJavascript,
-        name: "JavaScript",
       },
       {
         id: "pl-10",
@@ -229,18 +231,23 @@ export const skills = [
       },
       {
         id: "f-1",
+        icon: SiNextdotjs,
+        name: "NextJS",
+      },
+      {
+        id: "f-1",
+        icon: SiSpringboot,
+        name: "Spring Boot",
+      },
+      {
+        id: "f-1",
+        icon: SiAndroid,
+        name: "Android",
+      },
+      {
+        id: "f-1",
         icon: SiDjango,
         name: "Django",
-      },
-      {
-        id: "f-4",
-        icon: SiBootstrap,
-        name: "Bootstrap",
-      },
-      {
-        id: "f-5",
-        icon: SiTailwindcss,
-        name: "Tailwind CSS",
       },
     ],
   },
@@ -253,19 +260,9 @@ export const skills = [
         name: "Docker",
       },
       {
-        id: "t-2",
-        icon: SiPostgresql,
-        name: "PostgreSQL",
-      },
-      {
         id: "t-3",
         icon: SiPostman,
         name: "Postman",
-      },
-      {
-        id: "t-4",
-        icon: SiVisualstudiocode,
-        name: "VS Code",
       },
       {
         id: "t-5",
@@ -284,11 +281,6 @@ export const skills = [
       },
       {
         id: "t-9",
-        icon: SiVite,
-        name: "ViteJS",
-      },
-      {
-        id: "t-9",
         icon: SiNumpy,
         name: "Numpy",
       },
@@ -297,6 +289,77 @@ export const skills = [
 ];
 
 export const experiences = [
+  {
+    organisation: "SJSU Computer Engineering Dept.",
+    logo: sjsu,
+    link: "https://www.oracle.com/in/",
+    positions: [
+      {
+        title: "Distributed Systems Researcher & Developer",
+        duration: "Jul. 2024 - Present",
+        content: [
+          {
+            text: "Developing a mobile Android/Spring Boot infrastructure for data exchange in remote regions",
+            link: "",
+          },
+          {
+            text: "Implemented delay-tolerant networking with gRPC/Kotlin, ensuring reliable end-to-end encrypted delivery",
+            link: "",
+          },
+          {
+            text: "Automated build and testing workflows with GitHub Actions CI/CD to improve development time by 20%",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    organisation: "SJSU Undergraduate Research Opportunity Program",
+    logo: sjsu,
+    link: "https://www.oracle.com/in/",
+    positions: [
+      {
+        title: "Undergraduate Research Assistant",
+        duration: "Aug. 2024 - Present",
+        content: [
+          {
+            text: "Developing a fitness-tracking application with interactive migrant narratives to promote social awareness",
+            link: "",
+          },
+          {
+            text: "Built RESTful APIs and SSEs to support event-driven updates in MongoDB, Express, React, and Node.js",
+            link: "",
+          },
+          {
+            text: "Oversaw full development-cycle, from incorporating Agile sprints, unit testing, code reviews, and deployment",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    organisation: "SJSU Project Engineering Success",
+    logo: sjsu,
+    link: "https://www.oracle.com/in/",
+    positions: [
+      {
+        title: "AI/ML Researcher & Developer",
+        duration: "Aug. 2024 - Present",
+        content: [
+          {
+            text: "Researching ML solutions in healthcare through developing computer-vision models to classify cancerous tumors",
+            link: "",
+          },
+          {
+            text: "Converted large datasets into insightful visuals to understand the problem using Pandas, Matplotlib, and NumPy",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
   {
     organisation: "SJSU Software & Computer Engineering",
     logo: sce,
@@ -423,12 +486,12 @@ export const projects = [
   },
   {
     id: "project-2",
-    title: "EZ Database",
-    github: "https://github.com/jask1m",
-    link: "https://github.com/jask1m",
+    title: "EZ Database Notes",
+    github: "https://github.com/jask1m/EZ-Database",
+    // link: "https://github.com/jask1m",
     image: greentrust,
     content:
-      "Interface for companies & organizations to track internal personnel through role-based authentication permissions",
+      "EZ Database Notes is a full-stack application that enables users to create, store, and organize digital notes securely and efficiently. This application combines the power of Django on the backend with the dynamic user interface capabilities of React on the frontend.",
     stack: [
       {
         id: "icon-1",
@@ -449,6 +512,68 @@ export const projects = [
         id: "icon-4",
         icon: SiPostgresql,
         name: "PostgreSQL"
+      },
+    ],
+  },
+  {
+    id: "project-3",
+    title: "LinkedIn Post Decryptor",
+    github: "https://github.com/jask1m/LinkedIn-TimeStamp-Decryptor",
+    link: "https://linkedintimestampgenerator.vercel.app/",
+    image: linkin,
+    content:
+      "Developed an algorithm to parse a LinkedIn post’s URL to extract, then decode the ID into it’s publication date. Built a fullstack application with React, Node.js, allowing users to paste URLs for decrypted timestamps.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-3",
+        icon: SiExpress,
+        name: "Express"
+      },
+    ],
+  },
+  {
+    id: "project-4",
+    title: "University Carpool Coordinator",
+    github: "https://github.com/jask1m/FindCarpool",
+    // link: "https://github.com/jask1m",
+    image: carpool,
+    content:
+      "Programmed a carpool coordination application for San Jose State University, utilizing Express to build a RESTful API for the backend and a React frontend for an intuitive user interaction",
+    stack: [
+      {
+        id: "icon-3",
+        icon: SiTypescript,
+        name: "TypeScript"
+      },
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-3",
+        icon: SiExpress,
+        name: "React"
+      },
+      {
+        id: "icon-4",
+        icon: SiMongodb,
+        name: "MongoDB"
       },
     ],
   },
